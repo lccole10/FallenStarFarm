@@ -108,6 +108,7 @@ export class AppComponent {
         this.slides = this.everyone;
         break;
       }
+      
 
     }
   }
