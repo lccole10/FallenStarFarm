@@ -6,13 +6,15 @@
         [src]="slide.src"
         [alt]="slide.src"
         class="slide"
+        @carouselAnimation
       /> -->
       <img
-      [style.display]="i === currentSlide ? 'block' : 'none'"
+      [style.opacity]="0"
+      [@opacityState]="i === currentSlide"
       [src]="slide.src"
       [alt]="slide.src"
       class="slide"
-    />
+      />
     </ng-container>
   
     <!-- controls -->
