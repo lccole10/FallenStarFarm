@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDrawer, MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -15,6 +15,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 })
 export class AppComponent {
   title = 'fallen-star-farm';
+
+  @ViewChild('drawer') drawer: MatDrawer | undefined;
 
   public slides: {src: string}[] = [];
 
@@ -78,7 +80,9 @@ export class AppComponent {
   }
 
   updateCarousel(event: Event) {
-    console.log((event.target as Element).id);
+        
+    this.drawer?.close();
+    // console.log((event.target as Element).id);
     switch((event.target as Element).id) {
       case "theBoys": {
         this.slides = this.theBoys;
@@ -107,9 +111,8 @@ export class AppComponent {
       case "everyone": {
         this.slides = this.everyone;
         break;
-      }
-      
-
+      }      
     }
+
   }
 }

@@ -1,12 +1,18 @@
 <!-- carousel -->
 <div class="carousel">
     <ng-container *ngFor="let slide of slides; let i = index">
-      <img
+      <!-- <img
         *ngIf="i === currentSlide"
         [src]="slide.src"
         [alt]="slide.src"
         class="slide"
-      />
+      /> -->
+      <img
+      [style.display]="i === currentSlide ? 'block' : 'none'"
+      [src]="slide.src"
+      [alt]="slide.src"
+      class="slide"
+    />
     </ng-container>
   
     <!-- controls -->
