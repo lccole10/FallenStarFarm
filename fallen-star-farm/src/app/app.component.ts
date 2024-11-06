@@ -21,38 +21,38 @@ export class AppComponent {
 
   public theBoys: {src: string}[] = [
     { src: "Commet_1.jpeg" },
-    { src: "Pip_1.jpg" },
+    { src: "Pip_1.jpeg" },
     { src: "Commet_2.jpeg" },
-    { src: "Pip_2.jpg" },
-    { src: "Pip_3.jpg" }
+    { src: "Pip_2.jpeg" },
+    { src: "Pip_3.jpeg" }
   ];
 
   public theLadies: {src: string}[] = [
     { src: "Ladies_1.jpeg" },
-    { src: "Ladies_2.jpg" },
-    { src: "Ladies_3.jpg" },
-    { src: "Ladies_4.jpg" },
-    { src: "Ladies_5.jpg" },
-    { src: "Ladies_6.jpg" },
-    { src: "Ladies_7.jpg" },
-    { src: "Ladies_8.jpg" }
+    { src: "Ladies_2.jpeg" },
+    { src: "Ladies_3.jpeg" },
+    { src: "Ladies_4.jpeg" },
+    { src: "Ladies_5.jpeg" },
+    { src: "Ladies_6.jpeg" },
+    { src: "Ladies_7.jpeg" },
+    { src: "Ladies_8.jpeg" }
   ];
 
   public theGoats: {src: string}[] = [
     { src: "Goats_1.jpeg" },
-    { src: "Goats_2.jpg" },
-    { src: "Goats_3.jpg" },
-    { src: "Goats_4.jpg" },
-    { src: "IgII_1.jpg" },
-    { src: "IgII_2.jpg" },
-    { src: "Torch_1.jpg" }
+    { src: "Goats_2.jpeg" },
+    { src: "Goats_3.jpeg" },
+    { src: "Goats_4.jpeg" },
+    { src: "IgII_1.jpeg" },
+    { src: "IgII_2.jpeg" },
+    { src: "Torch_1.jpeg" }
   ];
 
   public theDog: {src: string}[] = [
     { src: "Chop_1.jpeg" },
-    { src: "Chop_2.jpg" },
-    { src: "Chop_3.jpg" },
-    { src: "Chop_4.jpg" }
+    { src: "Chop_2.jpeg" },
+    { src: "Chop_3.jpeg" },
+    { src: "Chop_4.jpeg" }
   ];
 
   public theCat: {src: string}[] = [
