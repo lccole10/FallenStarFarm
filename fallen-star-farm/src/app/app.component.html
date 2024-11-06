@@ -1,5 +1,29 @@
-<div id="main">
-  <img src="FSF_Logo.jpeg" alt="FSF_Logo" style="max-width: 25%; vertical-align: top;">
-    <img src="StacyAndIgii.jpg" alt="FSF">
 
-</div>
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <img src="FSF_Logo.jpeg" alt="FSF_Logo" style="max-width: 100%; vertical-align: top;">
+    <li><a id="theBoys" href="#" (click)="updateCarousel($event)">The Boys</a></li>
+    <li><a id="theLadies" href="#" (click)="updateCarousel($event)">The Ladies</a></li>
+    <li><a id="theGoats" href="#" (click)="updateCarousel($event)">The Goats</a></li>
+    <li><a id="theDog" href="#" (click)="updateCarousel($event)">The Dog</a></li>
+    <li><a id="theCat" href="#" (click)="updateCarousel($event)">The Cat</a></li>
+    <li><a id="theLizard" href="#" (click)="updateCarousel($event)">The Lizard</a></li>
+    <li><a id="everyone" href="#" (click)="updateCarousel($event)">Everyone</a></li>
+
+  </mat-drawer>
+  <button type="button" mat-fab (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="example-sidenav-content">
+
+    <!-- <div>
+        <img src="StacyAndIgii.jpg" alt="FSF">
+    </div> -->
+    <div class="container">
+      <app-carousel [slides]="slides"></app-carousel>
+   </div>
+  </div>
+
+</mat-drawer-container>
