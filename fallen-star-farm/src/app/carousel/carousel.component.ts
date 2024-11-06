@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input} from '@angular/core';
+import { Component, Input, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -16,6 +16,10 @@ export class CarouselComponent {
 
   constructor() {
 
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.currentSlide = 0;
   }
 
   onPreviousClick() {
