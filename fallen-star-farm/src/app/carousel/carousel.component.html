@@ -13,7 +13,8 @@
       [@opacityState]="i === currentSlide"
       [src]="slide.src"
       [alt]="slide.src"
-      class="slide"
+      [class.slide]="i === currentSlide"
+      [class.hiddenSlide]="!(i === currentSlide)"
       />
     </ng-container>
   

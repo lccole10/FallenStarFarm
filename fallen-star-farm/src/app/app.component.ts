@@ -22,9 +22,9 @@ export class AppComponent {
 
 
   public theBoys: {src: string}[] = [
-    { src: "Commet_1.jpeg" },
-    { src: "Pip_1.jpeg" },
     { src: "Commet_2.jpeg" },
+    { src: "Pip_1.jpeg" },
+    { src: "Commet_1.jpeg" },
     { src: "Pip_2.jpeg" },
     { src: "Pip_3.jpeg" }
   ];
@@ -47,7 +47,8 @@ export class AppComponent {
     { src: "Goats_4.jpeg" },
     { src: "IgII_1.jpeg" },
     { src: "IgII_2.jpeg" },
-    { src: "Torch_1.jpeg" }
+    { src: "Torch_1.jpeg" },
+    { src: "StacyAndIgii.jpg" }
   ];
 
   public theDog: {src: string}[] = [
@@ -66,7 +67,6 @@ export class AppComponent {
   ];
 
   public everyone: {src: string}[] = [
-    { src: "StacyAndIgii.jpg" },
     ...this.theBoys,
     ...this.theLadies,
     ...this.theGoats,
